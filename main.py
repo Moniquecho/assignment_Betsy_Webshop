@@ -3,7 +3,6 @@ __human_name__ = "Betsy Webshop"
 
 from models import *
 import os
-from datetime import datetime
 from spellchecker import SpellChecker
 
 spell = SpellChecker()
@@ -97,7 +96,7 @@ def populate_test_database():
   
     overalljeans = Product.create(name = "overalljeans", description = "comfortable jeans", price_per_unit = 5, quantity = 2, user =Boaz)
     couch = Product.create(name = "couch", description = "used sofa, nice to read a book", price_per_unit = 10, quantity = 3, user = Bradley)
-    raincoat = Product.create(name = "raincoat", description = "warm coat and nice black color", price_per_unit = 9.00, quantity =1, user =Boaz)
+    raincoat = Product.create(name = "raincoat", description = "warm coat and nice black color", price_per_unit = 9, quantity =1, user =Boaz)
     ring = Product.create(name = "ring", description = "small size but design is athentic", price_per_unit = 6, quantity = 5, user = Bradley)
     umbrella = Product.create(name = "umbrella", description = "big enough for two people in the rain", price_per_unit = 3, quantity = 6, user = Emma)
 
